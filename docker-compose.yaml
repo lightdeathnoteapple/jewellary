@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  httpd-server1:
+    build: ./cakeshop_template
+    ports:
+      - 60:80
+  httpd-server2:
+    build: ./exhibition-html-template
+    ports:
+      - 65:80
+  httpd_server3:
+    build: ./gym-docker-template
+    ports:
+      - 68:80
+
